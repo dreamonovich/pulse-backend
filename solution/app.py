@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route('/send', methods=['POST'])
+@app.route('/api/ping', methods=['POST'])
 def send():
     return jsonify({"status": "ok"}), 200
 
