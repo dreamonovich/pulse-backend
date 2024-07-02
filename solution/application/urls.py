@@ -23,4 +23,5 @@ a = 'api'
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path(f'{a}/ping/', ping_view),
+    path(f'{a}/countries/', include("country.urls")),
 ]
